@@ -1,0 +1,81 @@
+/* Sytle for Z-Top-Bar */
+.z-top-bar {
+	background-color: #333;
+	min-width: 1000px;
+	margin: 0;
+}
+
+.z-top-bar-inner {
+	display: flex;
+	align-items: center;
+	list-style: none;	
+	width: 1000px;
+	margin: auto;
+	padding: 0;
+	position: relative;
+}
+
+.z-top-bar-inner a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.z-top-bar .z-logo {
+	width: 170px;
+}
+
+.z-top-bar .logo {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+.z-top-bar .z-search-bar {
+	margin: auto 20px;
+	background-color: #FFF;
+}
+
+.z-top-bar .z-form, 
+.z-top-bar .z-search-icon {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.z-top-bar .z-form .z-input {
+	border: none;
+	padding-left: 15px;
+	width: 300px;
+	height: 25px;
+}
+
+.z-top-bar .z-search-bar .z-search-icon {
+	color: #000;
+	padding: 6px 10px;
+}
+
+.z-top-bar .z-top-bar-item {
+	height: 44px;
+}
+
+.z-top-bar .z-top-bar-item .active, 
+.z-top-bar .inner-item:hover {
+	background-color: #000;
+	color: #9a5f9e;
+}
+
+.z-top-bar .inner-item {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 0 10px;
+}
+
+.z-top-bar .z-login {
+	position: absolute;
+	right: 0;
+}
+
+.z-top-bar .z-login:hover {
+	text-decoration: underline;
+}

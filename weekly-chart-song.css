@@ -1,0 +1,177 @@
+/* Style for #Zingchart Tuần - Bài Hát */
+.container-songs {
+	width: 300px;
+	height: 850px;
+}
+
+.container-songs a {
+	text-decoration: none;
+}
+
+.container-songs ul {
+	list-style: none;
+	padding: 0;
+}
+
+.container-songs .description {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container-songs .title {
+	color: #9a5f9e;
+	font-size: 18px;
+	font-weight: 100;
+}
+
+.container-songs .title span {
+	color: #611879;
+	font-size: 25px;
+}
+
+.container-songs .title:hover span {
+	opacity: 0.7;
+}
+
+.container-songs .description .play-icon {
+	color: #777;
+}
+
+.container-songs .description .play-icon:hover {
+	color: #9a5f9e;
+}
+
+.container-songs .song-menu-inner {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+}
+
+.container-songs .song-menu-inner {
+	position: relative;
+}
+
+.container-songs .category {
+	color: #333;
+	font-size: 16px;
+	text-align: center;
+	background-color: #DDD;
+	margin: 0;
+	padding: 10px 0;
+}
+
+.container-songs .submenu-songs {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+
+.container-songs .song-menu-item:hover .category, 
+.container-songs .show-menu .category {
+	border-top: 2px solid #9a5f9e;
+	color: #000;
+}
+
+.container-songs .show-menu .submenu-songs,
+.container-songs .song-menu-item:hover .submenu-songs {
+	display: block;
+}
+
+.container-songs .show-menu .category {
+	background-color: #FFF;
+	border-right: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+}
+
+/* Style for first item */
+.container-songs .first-item {
+	background: url(https://photo-resize-zmp3.zadn.vn/w240h135_jpeg/thumb_video/4/1/2/2/412252c754b71b6802288435742a8177.jpg) no-repeat; 
+	background-size: cover; 
+	background-position: center; 
+	height: 120px; 
+	width: 300px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.container-songs .first-item .overlay {
+	background: linear-gradient(0deg, rgba(0,0,0,7) 0%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0) 100%); 
+	width: 288px;
+	padding-bottom: 10px;
+}
+
+.container-songs .first-item .overlay .number, 
+.container-songs .first-item .overlay a {
+	color: #FFF;
+}
+
+.container-songs .first-item .overlay .view-count {
+	color: #DDD;
+}
+/* End style for first-item */
+
+/* Begin style for submenu */
+.weekly-chart-song {
+	width: 300px;
+	background-color: #FFF;
+}
+
+.weekly-chart-song .weekly-chart-item {
+	display: flex;
+	align-items: center;
+	padding: 10px 10px 15px;
+	border-bottom: 1px solid #EEE;
+}
+
+.weekly-chart-song .weekly-chart-item .number {
+	padding-right: 10px;
+	font-size: 20px;
+}
+
+.weekly-chart-song .weekly-chart-item .desc {
+	flex-grow: 1;
+}
+
+.weekly-chart-song .weekly-chart-item .song-title {
+	font-size: 15px;
+	margin-bottom: 5px;
+	color: #000;
+}
+
+.weekly-chart-song .weekly-chart-item .singer, 
+.weekly-chart-song .weekly-chart-item .view-count {
+	font-size: 12px;
+	color: #777;
+}
+
+.weekly-chart-song .weekly-chart-item a {
+	text-decoration: none;
+}
+
+.weekly-chart-song .weekly-chart-item a:hover {
+	color: #9428b7;
+}
+
+.weekly-chart-song .weekly-chart-item .icons a {
+	display: none;
+	color: #999;
+}
+
+.weekly-chart-song .weekly-chart-item i {
+	margin-left: 5px;
+}
+
+.weekly-chart-song .weekly-chart-item:hover .icons a {
+	display: inline;
+}
+
+.weekly-chart-song .weekly-chart-item .icons a:hover {
+	color: #611879;
+}
+
+.weekly-chart-song .weekly-chart-item:hover .view-count {
+	display: none;
+}
+/* End style for submenu */

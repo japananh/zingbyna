@@ -1,0 +1,109 @@
+/* Style for NHẠC VIỆT MỚI and NHẠC VIỆT HOT */
+#vietnamese-songs {
+	width: 650px;
+	height: 690px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: #FFF;
+	margin: 20px 0;
+}
+
+#vietnamese-songs a {
+	text-decoration: none;
+}
+
+#vietnamese-songs .title-inner h1 {
+	display: inline-block;
+	color: #9a5f9e;
+	font-weight: 100;
+	margin: 0 0 15px;
+}
+
+#vietnamese-songs .title-inner h1:hover span {
+	color: #9a5f9e;
+}
+
+#vietnamese-songs .title-inner h1 span {
+	color: #611879;
+}
+
+#vietnamese-songs .hot-songs {
+	padding-right: 10px;
+	border-right: 1px solid #DDD;
+}
+
+#vietnamese-songs .brand-new-songs {
+	padding: 0 5px 0 10px;
+}
+
+#vietnamese-songs .item {
+	display: flex;
+	align-items: center;
+	padding: 6px 0;
+	border-bottom: 1px solid #DDD;
+}
+
+#vietnamese-songs .item-square {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+
+#vietnamese-songs .item-square .item-img,
+#vietnamese-songs .item-square .overlay {
+	width: 100%;
+	height: 100%;
+}
+
+#vietnamese-songs .item-square .overlay {
+	position: absolute;
+	top: 0;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+
+#vietnamese-songs .item-square:hover .overlay {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#vietnamese-songs .item-desc {
+	flex-grow: 1;
+}
+
+#vietnamese-songs .item-desc .item-title {
+	margin-bottom: 4px;
+}
+
+#vietnamese-songs .item-desc .item-title .item-link {
+	color: #000;
+	font-size: 15px;
+}
+
+#vietnamese-songs .item-desc .singer {
+	color: #999;
+	font-size: 12px;
+}
+
+#vietnamese-songs .item-desc .item-link:hover {
+	color: #9a5f9e;
+}
+
+#vietnamese-songs .item .icons {
+	display: none;
+}
+
+#vietnamese-songs .item .icons a {
+	margin-left: 5px; 
+	color: #BBB;
+}
+
+#vietnamese-songs .item:hover .icons {
+	display: block;
+}
+
+#vietnamese-songs .item .icons i:hover {
+	color: #9a5f9e;
+}

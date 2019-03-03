@@ -1,0 +1,220 @@
+/* Style for #Zingchart Tuần - MV */
+.container-mv {
+	width: 300px;
+	height: 610px;
+}
+
+.container-mv a {
+	text-decoration: none;
+}
+
+.container-mv ul {
+	list-style: none;
+	padding: 0;
+}
+
+.container-mv .description {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container-mv .title {
+	color: #9a5f9e;
+	font-size: 18px;
+	font-weight: 100;
+}
+
+.container-mv .title span {
+	color: #611879;
+	font-size: 25px;
+}
+
+.container-mv .title:hover span {
+	opacity: 0.7;
+}
+
+.container-mv .description .play-icon {
+	color: #777;
+}
+
+.container-mv .description .play-icon:hover {
+	color: #9a5f9e;
+}
+
+.container-mv .mv-menu-inner {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+}
+
+.container-mv .mv-menu-inner {
+	position: relative;
+}
+
+.container-mv .category {
+	color: #333;
+	font-size: 16px;
+	text-align: center;
+	background-color: #DDD;
+	margin: 0;
+	padding: 10px 0;
+}
+
+.container-mv .submenu-mv {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+
+.container-mv .mv-menu-item:hover .category, 
+.container-mv .show-menu .category {
+	border-top: 2px solid #9a5f9e;
+	color: #000;
+}
+
+.container-mv .show-menu .submenu-mv,
+.container-mv .mv-menu-item:hover .submenu-mv {
+	display: block;
+}
+
+.container-mv .show-menu .category {
+	background-color: #FFF;
+	border-right: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+}
+
+/* Begin style for first-item */
+.container-mv .first-item {
+	height: 120px; 
+	width: 300px;
+	position: relative;
+}
+
+.container-mv .first-item .img-mv {
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: cover;
+}
+
+.container-mv .first-item .overlay {
+	background: linear-gradient(0deg, rgba(0,0,0,7) 0%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0) 100%);
+	width: 285px;
+	padding: 10px 10px 10px 5px;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+}
+
+.container-mv .first-item .overlay .number, 
+.container-mv .first-item .overlay a {
+	color: #FFF;
+}
+
+.container-mv .first-item .overlay .number {
+	padding-right: 10px;
+	font-size: 20px;
+}
+
+.container-mv .first-item .overlay .desc {
+	flex-grow: 1;
+}
+
+.container-mv .first-item .overlay .mv-title {
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+.container-mv .first-item .overlay .singer, 
+.container-mv .first-item .overlay .view-count {
+	font-size: 12px;
+	color: #DDD;
+}
+/* End style for first-item */
+
+.weekly-chart-mv {
+	width: 300px;
+	background-color: #FFF;
+}
+
+.weekly-chart-mv-item {
+	display: flex;
+	align-items: center;
+	padding: 15px 0;
+	border-bottom: 1px solid #DDD;
+}
+
+.weekly-chart-mv-item a {
+	text-decoration: none;
+}
+
+/* Begin style for mv-square */
+.weekly-chart-mv .mv-square, 
+.mv-square .mv-img,
+.mv-square .play-icon,
+.mv-square .overlay {
+	width: 110px;
+	height: 60px;
+}
+
+.weekly-chart-mv .mv-square {
+	position: relative;
+}
+
+.weekly-chart-mv .mv-square .overlay {
+	background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 80%);
+	position: absolute;
+	top: 0;
+}
+
+.weekly-chart-mv .mv-square .overlay span {	
+	position: absolute;
+	bottom: 6px;
+	left: 4px;
+	font-size: 20px;
+	color: #FFF;	
+	opacity: 1;
+}
+
+.weekly-chart-mv .mv-square .play-icon {
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transform: scale(0.4);
+	transition: transform 0.5s;	
+}
+
+.weekly-chart-mv .mv-square:hover .play-icon {
+	opacity: 1;	
+	transform: scale(1.1);
+}
+
+.weekly-chart-mv .mv-square:hover .overlay {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+/* End style for mv-square */
+
+/* Begin style for mv-desc */
+.weekly-chart-mv .mv-desc {
+	width: 160px;
+	height: 60px;
+	margin: 0 15px;
+}
+
+.weekly-chart-mv .mv-title .mv-link {
+	color: #000;
+}
+
+.weekly-chart-mv .singer .mv-link, 
+.weekly-chart-mv .singer span,
+.weekly-chart-mv .view-count {
+	color: #999;
+	font-size: 12px;
+}
+/* End style for mv-desc */

@@ -1,0 +1,82 @@
+/* Style for Album Hot */
+#hot-album {
+	height: 750px;
+}
+
+#hot-album .title {
+	color: #9a5f9e;
+	font-weight: 100;
+}
+
+.hot-album-inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.hot-album-item {
+	margin-bottom: 20px;
+	width: 150px;
+}
+
+.hot-album-inner .item-link {
+	text-decoration: none;
+	color: #000;
+}
+
+.hot-album-inner .item-link:hover {
+	color: #9a5f9e;
+}
+
+/* Begin style for item-square */
+.hot-album-inner .item-square, 
+.hot-album-inner .item-img, 
+.hot-album-inner .overlay, 
+.hot-album-inner .play-icon {
+	width: 150px;
+	height: 150px;
+}
+
+.hot-album-inner .item-square {
+	position: relative;
+}
+
+.hot-album-inner .overlay, 
+.hot-album-inner .play-icon {
+	position: absolute;
+	top: 0;
+}
+
+.item.square .overlay {
+	transition: background-color 0.5s;
+}
+
+.item-square .play-icon {	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transform: scale(0.4);
+	transition: transform 0.5s;
+}
+
+.item-square:hover .play-icon {
+	opacity: 1;	
+	transform: scale(1.1);
+}
+
+.item-square:hover .overlay {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+/* End to style for item-square */
+
+.hot-album-item .item-title {
+	margin: 5px 0;
+	color: #000;
+	font-size: 14px;
+}
+
+.hot-album-item .singer {
+	color: #999;
+	font-size: 12px;
+}

@@ -1,0 +1,55 @@
+/* Style for NGHỆ SĨ HOT */
+#hot-singers {
+	height: 300px;
+	margin-top: 20px;
+}
+
+#hot-singers a {
+	text-decoration: none;
+}
+
+#hot-singers .title-inner h1,
+#hot-singers .title-inner h1:hover span {
+	color: #9a5f9e;
+	font-weight: 100;
+	margin-bottom: 15px;
+}
+
+#hot-singers .title-inner h1 span {
+	color: #611879;
+}
+
+#hot-singers .first-item-square {
+	width: 210px;
+	height: 210px;
+}
+
+#hot-singers .item-square {
+	width: 100px;
+	height: 100px;
+	margin: 0 0 10px 10px;
+}
+
+#hot-singers .first-item-square, 
+#hot-singers .item-square {
+	position: relative;
+	float: left;	
+}
+
+#hot-singers .overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0,0,0,0.5);
+	color: #FFF;
+	display: none;
+	text-align: center;
+}
+
+#hot-singers .first-item-square:hover .overlay,
+#hot-singers .item-square:hover .overlay {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

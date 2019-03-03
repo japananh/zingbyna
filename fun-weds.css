@@ -1,0 +1,70 @@
+/* Style for Thứ Tứ Vui Vẻ */
+#fun-wednesday {
+	height: 530px;
+}
+
+#fun-wednesday .title {
+	color: #9a5f9e;
+	font-weight: 100;
+} 
+
+.fun-wednesday-inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.fun-wednesday-inner .item-link {
+	text-decoration: none;
+}
+
+.fun-wednesday-inner .item-square {
+	position: relative;
+}
+
+.fun-wednesday-inner .item-square,
+.fun-wednesday-inner .item-img, 
+.fun-wednesday-inner .overlay, 
+.fun-wednesday-inner .play-icon {
+	height: 150px;
+	width: 150px;	
+}
+
+.fun-wednesday-inner .overlay, 
+.fun-wednesday-inner .play-icon {
+	position: absolute;
+	top: 0;
+}
+
+.fun-wednesday-inner .overlay {
+	transition: background-color 0.5s;
+}
+
+.fun-wednesday-inner .play-icon {	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transform: scale(0.4);
+	transition: transform 0.5s;
+}
+
+.fun-wednesday-inner .item-square:hover .play-icon {
+	opacity: 1;	
+	transform: scale(1.1);
+}
+
+.fun-wednesday-inner .item-square:hover .overlay {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.fun-wednesday-inner .item-title {
+	display: block;
+	margin: 10px 0 60px;
+	width: 150px;
+	color: #000;
+}
+
+.fun-wednesday-inner .item-title:hover {
+	color: #9a5f9e;
+}

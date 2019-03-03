@@ -1,0 +1,94 @@
+#footer {
+	background-color: #333;
+	min-width: 1000px;
+	height: 130px;
+}
+
+#footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#footer a {
+	text-decoration: none;
+}
+
+.footer-container {
+	width: 900px;
+	margin: 0 auto;
+	padding-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-container .copyright img {
+	float: left;
+	margin-right: 10px;
+	width: 58px;
+}
+
+.footer-container .copyright p {
+	color: #BBB;
+	margin: 7px 0 5px;
+	font-size: 12px;
+}
+
+.footer-container .footer-links {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-container .footer-links .link {
+	margin-bottom: 10px;
+	min-width: 90px;
+}
+
+.footer-container .footer-links .link a {
+	color: #DDD;
+	font-size: 12px;
+}
+
+.footer-container .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+.footer-container .container .social-sq {
+	margin: 0;
+	display: flex;	
+}
+
+.footer-container .container .social-sq img {
+	width: 35px;
+	margin: 0 0 2px 8px;
+	opacity: 0.4;
+}
+
+.footer-container .container .dmca-badge {
+	align-self: center;
+}
+
+.footer-container .container .sw-mobile {
+	margin: 0;	
+	font-size: 13px;
+}
+
+.footer-container .container a {
+	color: #EEE;
+}
+
+.footer-container .back-to-top {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: #634480;
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

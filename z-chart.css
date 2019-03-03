@@ -1,0 +1,184 @@
+#z-chart {
+	width: 650px;
+	margin: 0;
+}
+
+/* Begin style for z-chart-content */
+#z-chart .z-chart-content {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+	background-color: #030119;
+	height: 280px;
+}
+
+.z-chart-content-inner {
+	display: flex;
+	align-items: center;
+	border: 1px solid #d6cfcf26;
+	border-radius: 2px;
+	background-color: transparent;
+	height: 40px;
+	max-width: 200px;
+	margin-bottom: 15px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.z-chart-content-inner:hover {
+	background-color: #acabbb42;
+}
+
+.z-chart-content-inner .rank {
+	padding: 6px;
+}
+
+.z-chart-content-inner .avatar {
+	flex-shrink: 0;
+	height: 28px;
+	width: 28px;	
+	background-size: cover;
+	background-position: center;
+	border: 1px solid #FFF;
+	border-radius: 2px;
+}
+
+.z-chart-content-inner .info {
+	flex-grow: 1;
+	padding: 6px;
+}
+
+.z-chart-content-inner .song-title {
+	padding-bottom: 2px;
+	color: #FFF;
+}
+
+.z-chart-content-inner .singer {
+	font-size: 9px;
+	color: #AAA;
+}
+
+.z-chart-content .frequency {
+	padding: 6px;
+}
+/* End style for z-chart-content */
+
+/* Begin style for z-chart-list */
+#z-chart .z-list-item {
+	list-style-type: none;
+	padding: 0;
+	margin: 5px;
+}
+
+#z-chart .z-item-inner {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	border-bottom: 1px solid #EEE;
+}
+
+#z-chart .last-item {
+	border-bottom: none;
+}
+
+.z-chart-list .rank {
+	font-size: 17px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.z-chart-list .rank-status  {
+	margin: 0 28px;
+	min-width: 10px;
+}
+
+/* Begin to style for avatar */
+.z-chart-list .avatar-square {
+	position: relative;
+}
+
+.z-chart-list .avatar-square, 
+.z-chart-list .avatar, 
+.z-chart-list .overlay, 
+.z-chart-list .play-icon {
+	height: 60px;
+	width: 60px;	
+}
+
+.z-chart-list .avatar-square .overlay, 
+.z-chart-list .play-icon {
+	position: absolute;
+	top: 0;
+}
+
+.z-chart-list .avatar.square .overlay {
+	transition: background-color 0.5s;
+}
+
+.z-chart-list .avatar-square .play-icon {	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transform: scale(0.4);
+	transition: transform 0.5s;
+}
+
+.z-chart-list .avatar-square:hover .play-icon {
+	opacity: 1;	
+	transform: scale(0.6);
+}
+
+.z-chart-list .avatar-square:hover .overlay {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+/* End to style for avatar */
+
+.z-chart-list .song-desc {
+	flex-grow: 1;
+	align-self: flex-start;
+	margin: 3px 10px;
+}
+
+.z-chart-list .avatar-link, 
+.z-chart-list .song-title, 
+.z-chart-list .singer, 
+.z-chart-list .icon {
+	text-decoration: none;
+	color: #000;
+}
+
+.z-chart-list .song-title {
+	font-size: 14px;
+}
+
+.z-chart-list .singer {
+	color: #999;
+	font-size: 12px;
+}
+
+.z-chart-list .song-tools {
+	margin-right: 20px;
+	min-width: 105px;
+}
+
+.z-chart-list .icon {
+	color: #DDD;
+	display: inline-block;
+	margin-right: 6px;
+}
+
+.z-chart-list .song-title:hover {
+	color: #9428b7;
+}
+
+.z-chart-list .icon:hover {
+	color: #cfc1d4;
+}
+
+.z-chart-list .view-count {
+	color: #666;
+	font-size: 16px;
+	margin: 0 25px;
+}
+/* End style for z-chart-list */

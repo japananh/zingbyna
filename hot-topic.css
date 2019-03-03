@@ -1,0 +1,34 @@
+#hot-topic {
+	width: 300px;
+	margin-bottom: 20px;
+}
+
+#hot-topic .title {
+	color: #9a5f9e;
+	font-weight: 100;
+	margin: 0;
+}
+
+#hot-topic ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+#hot-topic ul .hot-topic-item {
+	margin-bottom: 9px;
+}
+
+#hot-topic .topic-link .img-responsive {
+	width:100%;
+	height: 100%;
+}
+
+#hot-topic .more {
+	color: #707070;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+#hot-topic .more:hover {
+	color: #611879;
+}

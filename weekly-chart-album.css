@@ -1,0 +1,208 @@
+/* Style for #Zingchart Tuần - ALBUM */
+.container-album {
+	width: 300px;
+	height: 820px;
+}
+
+.container-album a {
+	text-decoration: none;
+}
+
+.container-album ul {
+	list-style: none;
+	padding: 0;
+}
+
+.container-album .title {
+	color: #9a5f9e;
+	font-size: 18px;
+	font-weight: 100;
+}
+
+.container-album .title span {
+	color: #611879;
+	font-size: 25px;
+}
+
+.container-album .title:hover span {
+	opacity: 0.7;
+}
+
+.container-album .album-menu-inner {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+}
+
+.container-album .album-menu-inner {
+	position: relative;
+}
+
+.container-album .category {
+	color: #333;
+	font-size: 16px;
+	text-align: center;
+	background-color: #DDD;
+	margin: 0;
+	padding: 10px 0;
+}
+
+.container-album .submenu-album {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+
+.container-album .album-menu-item:hover .category, 
+.container-album .show-menu .category {
+	border-top: 2px solid #9a5f9e;
+	color: #000;
+}
+
+.container-album .show-menu .submenu-album,
+.container-album .album-menu-item:hover .submenu-album {
+	display: block;
+}
+
+.container-album .show-menu .category {
+	background-color: #FFF;
+	border-right: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+}
+
+/* Begin style for first-item */
+.container-album .first-item {
+	height: 125px; 
+	width: 300px;
+	position: relative;
+}
+
+.container-album .first-item .img-album {
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: cover;
+}
+
+.container-album .first-item .overlay {
+	background: linear-gradient(0deg, rgba(0,0,0,7) 0%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0) 100%);
+	width: 285px;
+	padding: 10px 10px 10px 5px;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+}
+
+.container-album .first-item .overlay .number, 
+.container-album .first-item .overlay a {
+	color: #FFF;
+}
+
+.container-album .first-item .overlay .number {
+	padding-right: 10px;
+	font-size: 20px;
+}
+
+.container-album .first-item .overlay .desc {
+	flex-grow: 1;
+}
+
+.container-album .first-item .overlay .album-title {
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+.container-album .first-item .overlay .singer, 
+.container-album .first-item .overlay .view-count {
+	font-size: 12px;
+	color: #DDD;
+}
+/* End style for first-item */
+
+.weekly-chart-album {
+	width: 300px;
+	background-color: #FFF;
+}
+
+.weekly-chart-album-item {
+	display: flex;
+	align-items: center;
+	padding: 15px 0;
+	border-bottom: 1px solid #DDD;
+}
+
+.weekly-chart-album-item a {
+	text-decoration: none;
+}
+
+/* Begin style for album-square */
+.weekly-chart-album .album-square, 
+.album-square .album-img,
+.album-square .play-icon,
+.album-square .overlay {
+	width: 110px;
+	height: 110px;
+}
+
+.weekly-chart-album .album-square {
+	position: relative;
+}
+
+.weekly-chart-album .album-square .overlay {
+	background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 80%);
+	position: absolute;
+	top: 0;
+}
+
+.weekly-chart-album .album-square .overlay span {	
+	position: absolute;
+	bottom: 6px;
+	left: 4px;
+	font-size: 20px;
+	color: #FFF;	
+	opacity: 1;
+}
+
+.weekly-chart-album .album-square .play-icon {
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transform: scale(0.5);
+	transition: transform 0.5s;	
+}
+
+.weekly-chart-album .album-square:hover .play-icon {
+	opacity: 1;	
+	transform: scale(1.5);
+}
+
+.weekly-chart-album .album-square:hover .overlay {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+/* End style for album-square */
+
+/* Begin style for album-desc */
+.weekly-chart-album .album-desc {
+	width: 160px;
+	height: 110px;
+	margin: 0 15px;
+}
+
+.weekly-chart-album .album-title .album-link {
+	color: #000;
+	display: inline-block;
+	margin-top: 3px;
+}
+
+.weekly-chart-album .singer .album-link, 
+.weekly-chart-album .singer span,
+.weekly-chart-album .view-count {
+	color: #999;
+	font-size: 12px;
+}
+/* End style for album-desc */

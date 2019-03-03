@@ -1,0 +1,23 @@
+{
+  "name": "css-final-project-coders-tokyo",
+  "version": "1.0.0",
+  "description": "This is my CSS Final Project in Coders Tokyo, a free community to learn to code in Vietnam.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/japananh/css-final-project-coders-tokyo.git"
+  },
+  "keywords": [
+    "css",
+    "html"
+  ],
+  "author": "nhat-anh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/japananh/css-final-project-coders-tokyo/issues"
+  },
+  "homepage": "https://github.com/japananh/css-final-project-coders-tokyo#readme"
+}

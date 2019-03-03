@@ -1,0 +1,52 @@
+#for-you {
+	width: 300px;
+	height: 120px;
+	background: url("https://picsum.photos/300/110");
+	margin-bottom: 20px;
+}
+
+#for-you a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+#for-you-inner {
+	height: 100%;
+	width: 100%;
+}
+
+#for-you .playlist-square {
+	position: relative;
+	width: 90px;
+	height: 90px; 
+	float: left;
+	margin: 15px;
+}
+
+#for-you .playlist-square .overlay {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#for-you .playlist-square:hover .overlay {
+	background-color: rgba(0,0,0,0.5);
+}
+
+#for-you .playlist-square .overlay i {
+	color: #FFF;
+}
+
+#for-you .content {
+	padding: 15px;
+	margin-left: 90px;
+}
+
+#for-you .content p {
+	margin: 0;
+}

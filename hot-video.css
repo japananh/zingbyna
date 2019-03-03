@@ -1,0 +1,96 @@
+/* Style for Video Hot */
+#hot-video {
+	height: 540px;
+}
+
+#hot-video a {
+	text-decoration: none;
+}
+
+#hot-video .title-inner h1 {
+	display: inline-block;
+	color: #9a5f9e;
+	font-weight: 100;
+	margin: 0 0 15px;
+}
+
+#hot-video .title-inner h1:hover span {
+	color: #9a5f9e;
+}
+
+#hot-video .title-inner h1 span {
+	color: #611879;
+}
+
+.hot-video-inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.hot-video-item {
+	margin-bottom: 20px;
+	width: 140px;
+}
+
+.hot-video-inner .item-link {
+	text-decoration: none;
+	color: #000;
+}
+
+.hot-video-inner .item-link:hover {
+	color: #9a5f9e;
+}
+
+/* Begin style for item-square */
+.hot-video-inner .item-square, 
+.hot-video-inner .item-img, 
+.hot-video-inner .overlay, 
+.hot-video-inner .play-icon {
+	width: 140px;
+	height: 80px;
+}
+
+.hot-video-inner .item-square {
+	position: relative;
+}
+
+.hot-video-inner .overlay, 
+.hot-video-inner .play-icon {
+	position: absolute;
+	top: 0;
+}
+
+.hot-video-inner .item.square .overlay {
+	transition: background-color 0.5s;
+}
+
+.hot-video-inner .item-square .play-icon {	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transform: scale(0.4);
+	transition: transform 0.5s;
+}
+
+.hot-video-inner .item-square:hover .play-icon {
+	opacity: 1;	
+	transform: scale(1.1);
+}
+
+.hot-video-inner .item-square:hover .overlay {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+/* End to style for item-square */
+
+.hot-video-item .item-title {
+	margin: 5px 0;
+	color: #000;
+	font-size: 14px;
+}
+
+.hot-video-item .singer {
+	color: #999;
+	font-size: 12px;
+}
