@@ -25,6 +25,7 @@
 
 .has-submenu {
 	position: relative;
+	z-index: 100;
 }
 
 .has-submenu:hover .submenu {
